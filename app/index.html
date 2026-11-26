@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Japan in Figures — National Statistics Portal</title>
+<meta name="description" content="Population, economy, labour, prices, trade and regions of Japan, with real figures and their sources. Runs offline from static files.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>
+        <span class="brand-name">Japan in Figures</span><br>
+        <span class="brand-tag">National Statistics Portal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="trade.html">Trade</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Japan · National statistics</p>
+      <h1>Japan, counted: people, money, work, prices and trade.</h1>
+      <p class="lede">One place for the figures people look up about Japan — each with its
+      source and year, each chart drawn from the same numbers as its table,
+      and every page reachable from the menu above.</p>
+      <p class="updated">Figures as published for 2015–2024 · Sources: World Bank World Development
+      Indicators and the Statistics Bureau of Japan</p>
+    </section>
+
+    <section class="section" aria-label="Headline indicators">
+      <div class="kpi-grid">
+        <article class="kpi">
+          <p class="kpi-label">Population</p>
+          <p class="kpi-value">124.0m</p>
+          <p class="kpi-note">2024 · down 541,000 on 2023</p>
+          <p class="kpi-source">World Bank WDI</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">GDP, nominal</p>
+          <p class="kpi-value">$4.19tn</p>
+          <p class="kpi-note">2024 · 4th largest in the world</p>
+          <p class="kpi-source">World Bank WDI</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">GDP per capita</p>
+          <p class="kpi-value">$33,797</p>
+          <p class="kpi-note">2024 · current US dollars</p>
+          <p class="kpi-source">World Bank WDI</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Unemployment</p>
+          <p class="kpi-value">2.5%</p>
+          <p class="kpi-note">2024 · of the total labour force</p>
+          <p class="kpi-source">World Bank WDI (ILO)</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Consumer inflation</p>
+          <p class="kpi-value">+2.7%</p>
+          <p class="kpi-note">2024 · annual CPI change</p>
+          <p class="kpi-source">World Bank WDI</p>
+        </article>
+        <article class="kpi">
+          <p class="kpi-label">Life expectancy</p>
+          <p class="kpi-value">84.0 years</p>
+          <p class="kpi-note">2024 · at birth</p>
+          <p class="kpi-source">World Bank WDI</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="two-col">
+        <article class="card">
+          <h3>Population is shrinking — slowly, every year</h3>
+          <div class="controls" data-range-group data-chart="population-chart" data-series="population" data-kind="line">
+            <span class="controls-label">Years:</span>
+            <button class="chip" type="button" data-from="2015" data-to="2024" aria-pressed="true">2015–2024</button>
+            <button class="chip" type="button" data-from="2015" data-to="2019" aria-pressed="false">2015–2019</button>
+            <button class="chip" type="button" data-from="2020" data-to="2024" aria-pressed="false">2020–2024</button>
+          </div>
+          <div class="chart" id="population-chart" role="img" aria-label="Population of Japan, 2015 to 2024"></div>
+          <p class="source-note">Total population, persons. Source: World Bank WDI (SP.POP.TOTL).
+          <a href="population.html">Population in full →</a></p>
+        </article>
+        <article class="card">
+          <h3>Nominal GDP fell back in dollars in 2024</h3>
+          <div class="controls" data-range-group data-chart="gdp-chart" data-series="gdp" data-kind="bar">
+            <span class="controls-label">Years:</span>
+            <button class="chip" type="button" data-from="2015" data-to="2024" aria-pressed="true">2015–2024</button>
+            <button class="chip" type="button" data-from="2015" data-to="2019" aria-pressed="false">2015–2019</button>
+            <button class="chip" type="button" data-from="2020" data-to="2024" aria-pressed="false">2020–2024</button>
+          </div>
+          <div class="chart" id="gdp-chart" role="img" aria-label="Nominal GDP of Japan, 2015 to 2024"></div>
+          <p class="source-note">Nominal GDP, current US dollars. Source: World Bank WDI (NY.GDP.MKTP.CD).
+          <a href="economy.html">Economy in full →</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="two-col-wide">
+        <article class="card">
+          <h3>Latest releases</h3>
+          <ul class="release-list">
+            <li>
+              <span class="release-date">2024</span>
+              <p class="release-title">Population falls below 124 million for the first time</p>
+              <p class="release-detail">Total population 123,975,371 at 1 October 2024 (World Bank WDI).</p>
+            </li>
+            <li>
+              <span class="release-date">2024</span>
+              <p class="release-title">Nominal GDP $4.19 trillion</p>
+              <p class="release-detail">Down from $4.38 trillion in 2023, largely on the weaker yen (World Bank WDI).</p>
+            </li>
+            <li>
+              <span class="release-date">2024</span>
+              <p class="release-title">Consumer prices rise 2.7%</p>
+              <p class="release-detail">Second year above 2% after 3.3% in 2023 (World Bank WDI).</p>
+            </li>
+            <li>
+              <span class="release-date">2024</span>
+              <p class="release-title">Fertility rate falls to 1.15</p>
+              <p class="release-detail">Down from 1.20 in 2023 and 1.36 in 2019 (World Bank WDI).</p>
+            </li>
+            <li>
+              <span class="release-date">2020</span>
+              <p class="release-title">Census counts 126,146,099 people</p>
+              <p class="release-detail">The top eight prefectures hold 50.7% of the population (Statistics Bureau of Japan).</p>
+            </li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Browse by topic</h3>
+          <ul class="link-list">
+            <li><a href="population.html"><span><span class="link-title">Population</span><br><span class="link-desc">Ten years, age structure, fertility</span></span><span class="link-arrow">→</span></a></li>
+            <li><a href="economy.html"><span><span class="link-title">Economy</span><br><span class="link-desc">GDP and GDP per capita</span></span><span class="link-arrow">→</span></a></li>
+            <li><a href="labour.html"><span><span class="link-title">Labour</span><br><span class="link-desc">Unemployment, 2015–2024</span></span><span class="link-arrow">→</span></a></li>
+            <li><a href="prices.html"><span><span class="link-title">Prices</span><br><span class="link-desc">Consumer inflation</span></span><span class="link-arrow">→</span></a></li>
+            <li><a href="trade.html"><span><span class="link-title">Trade</span><br><span class="link-desc">Exports, imports and the balance</span></span><span class="link-arrow">→</span></a></li>
+            <li><a href="regions.html"><span><span class="link-title">Regions</span><br><span class="link-desc">The 47 prefectures, ranked</span></span><span class="link-arrow">→</span></a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="note">
+        <p><strong>About these figures.</strong> Every number on this site is a published
+        statistic with its source and year shown beside it. Nothing is estimated
+        here, and nothing is fetched from the network: the whole site runs from
+        its own files. See <a href="sources.html">Sources and methods</a> for
+        the full list.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Japan in Figures — an independent national statistics site. Figures from the
+    World Bank World Development Indicators and the Statistics Bureau of Japan;
+    see <a href="sources.html">Sources and methods</a>.</p>
+    <p>Built as an original site for the make.fun “Make the best national statistics
+    site” bounty. © <span id="footer-year">2026</span> Japan in Figures.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

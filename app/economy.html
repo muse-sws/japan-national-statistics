@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — Japan in Figures</title>
+<meta name="description" content="Japan's nominal GDP 2015–2024 and GDP per capita, with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>
+        <span class="brand-name">Japan in Figures</span><br>
+        <span class="brand-tag">National Statistics Portal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="trade.html">Trade</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Economy</p>
+      <h1>A $4.19 trillion economy — smaller in dollars, not in yen.</h1>
+      <p class="lede">Japan's nominal GDP in US dollars fell from $5.25 trillion in 2019 to
+      $4.19 trillion in 2024. The fall is mostly the yen: in yen terms the
+      economy kept growing. Japan remains the world's fourth-largest economy.</p>
+      <p class="updated">Source: World Bank World Development Indicators (NY.GDP.MKTP.CD), accessed 26 November 2026</p>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <h3>Nominal GDP, 2015–2024</h3>
+        <div class="controls" data-chart-toggle data-chart="gdp-chart">
+          <span class="controls-label">Show as:</span>
+          <button class="chip" type="button" data-kind="bar" aria-pressed="true">Bars</button>
+          <button class="chip" type="button" data-kind="line" aria-pressed="false">Line</button>
+        </div>
+        <div class="chart" id="gdp-chart" role="img" aria-label="Nominal GDP of Japan, 2015 to 2024"></div>
+        <div class="table-scroll">
+          <table data-sortable>
+            <thead>
+              <tr><th data-sort="0" data-type="number">Year</th><th class="number" data-sort="1" data-type="number">GDP, current US$</th><th class="number" data-sort="2" data-type="number">Change on year</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2015</td><td class="number">$4.53tn</td><td class="number">—</td></tr>
+              <tr><td>2016</td><td class="number">$5.11tn</td><td class="number">+12.7%</td></tr>
+              <tr><td>2017</td><td class="number">$5.04tn</td><td class="number">−1.4%</td></tr>
+              <tr><td>2018</td><td class="number">$5.15tn</td><td class="number">+2.3%</td></tr>
+              <tr><td>2019</td><td class="number">$5.25tn</td><td class="number">+1.8%</td></tr>
+              <tr><td>2020</td><td class="number">$5.19tn</td><td class="number">−1.1%</td></tr>
+              <tr><td>2021</td><td class="number">$5.23tn</td><td class="number">+0.7%</td></tr>
+              <tr><td>2022</td><td class="number">$4.45tn</td><td class="number">−14.9%</td></tr>
+              <tr><td>2023</td><td class="number">$4.38tn</td><td class="number">−1.4%</td></tr>
+              <tr><td>2024</td><td class="number">$4.19tn</td><td class="number">−4.5%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source-note">Nominal GDP, current US dollars. Source: World Bank WDI (NY.GDP.MKTP.CD).
+        Click a column heading to sort. The 2022 drop follows the yen's sharp fall
+        against the dollar that year.</p>
+      </article>
+
+      <div class="two-col">
+        <article class="card">
+          <h3>GDP per capita, 2019–2024</h3>
+          <div class="chart" id="gdp-per-capita-chart" role="img" aria-label="GDP per capita, 2019 to 2024"></div>
+          <p class="source-note">Current US dollars per person. Source: World Bank WDI
+          (NY.GDP.PCAP.CD). GDP per capita fell from $41,581 in 2021 to $33,797
+          in 2024, again largely a currency effect.</p>
+        </article>
+        <article class="card">
+          <h3>Reading the numbers</h3>
+          <p><strong>Nominal vs real.</strong> These are nominal figures in current
+          dollars, so they move with both prices and the exchange rate. For
+          growth in the volume of goods and services, use real GDP — the Cabinet
+          Office publishes it in the national accounts.</p>
+          <p><strong>The yen effect.</strong> Between 2021 and 2024 the yen fell from
+          about ¥110 to about ¥150 per dollar. Measured in yen, Japan's economy
+          grew over the same period; measured in dollars, it shrank by a fifth.</p>
+          <p><strong>Rank.</strong> In 2024 Japan was the world's fourth-largest
+          economy in nominal dollars, behind the United States, China and Germany.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Japan in Figures — an independent national statistics site. Figures from the
+    World Bank World Development Indicators and the Statistics Bureau of Japan;
+    see <a href="sources.html">Sources and methods</a>.</p>
+    <p>Built as an original site for the make.fun “Make the best national statistics
+    site” bounty. © <span id="footer-year">2026</span> Japan in Figures.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

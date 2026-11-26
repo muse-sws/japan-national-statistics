@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Labour — Japan in Figures</title>
+<meta name="description" content="Japan's unemployment rate 2015–2024, with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>
+        <span class="brand-name">Japan in Figures</span><br>
+        <span class="brand-tag">National Statistics Portal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="trade.html">Trade</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Labour</p>
+      <h1>Unemployment at 2.5% — among the lowest in the developed world.</h1>
+      <p class="lede">Japan's unemployment rate has stayed below 3.5% for the whole decade,
+      peaking at 3.4% in 2015 and easing to 2.5% in 2024. The labour market's
+      binding constraint is not jobs — it is workers.</p>
+      <p class="updated">Source: World Bank World Development Indicators (SL.UEM.TOTL.ZS, modelled ILO estimate), accessed 26 November 2026</p>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <h3>Unemployment rate, 2015–2024</h3>
+        <div class="controls" data-range-group data-chart="unemployment-chart" data-series="unemployment" data-kind="line">
+          <span class="controls-label">Years:</span>
+          <button class="chip" type="button" data-from="2015" data-to="2024" aria-pressed="true">2015–2024</button>
+          <button class="chip" type="button" data-from="2015" data-to="2019" aria-pressed="false">2015–2019</button>
+          <button class="chip" type="button" data-from="2020" data-to="2024" aria-pressed="false">2020–2024</button>
+        </div>
+        <div class="chart" id="unemployment-chart" role="img" aria-label="Unemployment rate, 2015 to 2024"></div>
+        <div class="table-scroll">
+          <table data-sortable>
+            <thead>
+              <tr><th data-sort="0" data-type="number">Year</th><th class="number" data-sort="1" data-type="number">Unemployment</th><th class="number" data-sort="2" data-type="number">Change on year</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2015</td><td class="number">3.4%</td><td class="number">—</td></tr>
+              <tr><td>2016</td><td class="number">3.1%</td><td class="number">−0.3 pts</td></tr>
+              <tr><td>2017</td><td class="number">2.8%</td><td class="number">−0.3 pts</td></tr>
+              <tr><td>2018</td><td class="number">2.5%</td><td class="number">−0.3 pts</td></tr>
+              <tr><td>2019</td><td class="number">2.4%</td><td class="number">−0.1 pts</td></tr>
+              <tr><td>2020</td><td class="number">2.8%</td><td class="number">+0.4 pts</td></tr>
+              <tr><td>2021</td><td class="number">2.8%</td><td class="number">0.0 pts</td></tr>
+              <tr><td>2022</td><td class="number">2.6%</td><td class="number">−0.2 pts</td></tr>
+              <tr><td>2023</td><td class="number">2.6%</td><td class="number">0.0 pts</td></tr>
+              <tr><td>2024</td><td class="number">2.5%</td><td class="number">−0.1 pts</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source-note">Unemployment, % of the total labour force (modelled ILO estimate).
+        Source: World Bank WDI (SL.UEM.TOTL.ZS). Click a column heading to sort.</p>
+      </article>
+
+      <div class="two-col">
+        <article class="card">
+          <h3>What the rate means</h3>
+          <p>Japan's unemployment rate is low by any standard: the OECD average is
+          roughly twice as high. Two forces hold it down — a shrinking working-age
+          population and a labour market where firms hoard workers rather than
+          shed them in a downturn.</p>
+          <p>The pandemic's effect was small and brief: unemployment rose from 2.4%
+          in 2019 to 2.8% in 2020 and was back to 2.6% by 2022.</p>
+        </article>
+        <article class="card">
+          <h3>What to watch instead</h3>
+          <p>With unemployment this low, the telling indicators are elsewhere:
+          the size of the labour force, the share of non-regular work, and wages.
+          The spring wage round (shunto) and the Statistics Bureau's Labour Force
+          Survey are the releases to follow.</p>
+          <p>See <a href="population.html">Population</a> for the shrinking
+          working-age population behind the tight labour market, and
+          <a href="prices.html">Prices</a> for what wages buy.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Japan in Figures — an independent national statistics site. Figures from the
+    World Bank World Development Indicators and the Statistics Bureau of Japan;
+    see <a href="sources.html">Sources and methods</a>.</p>
+    <p>Built as an original site for the make.fun “Make the best national statistics
+    site” bounty. © <span id="footer-year">2026</span> Japan in Figures.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

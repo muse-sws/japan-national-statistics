@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trade — Japan in Figures</title>
+<meta name="description" content="Japan's exports and imports of goods and services 2019–2024, with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>
+        <span class="brand-name">Japan in Figures</span><br>
+        <span class="brand-tag">National Statistics Portal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="trade.html">Trade</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Trade</p>
+      <h1>Japan sells $921 billion abroad — and buys $958 billion.</h1>
+      <p class="lede">Exports of goods and services reached $921 billion in 2024, equal to
+      22.0% of GDP — the highest share in the six years shown. Imports were
+      $958 billion, leaving a goods-and-services deficit of about $37 billion.</p>
+      <p class="updated">Source: World Bank World Development Indicators (NE.EXP.GNFS.CD, NE.IMP.GNFS.CD, NE.EXP.GNFS.ZS), accessed 26 November 2026</p>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <h3>Exports of goods and services, 2019–2024</h3>
+        <div class="controls" data-range-group data-chart="trade-chart" data-series="exports" data-kind="line">
+          <span class="controls-label">Years:</span>
+          <button class="chip" type="button" data-from="2019" data-to="2024" aria-pressed="true">2019–2024</button>
+          <button class="chip" type="button" data-from="2019" data-to="2021" aria-pressed="false">2019–2021</button>
+          <button class="chip" type="button" data-from="2022" data-to="2024" aria-pressed="false">2022–2024</button>
+        </div>
+        <div class="chart" id="trade-chart" role="img" aria-label="Exports of goods and services, 2019 to 2024"></div>
+        <div class="table-scroll">
+          <table data-sortable>
+            <thead>
+              <tr><th data-sort="0" data-type="number">Year</th><th class="number" data-sort="1" data-type="number">Exports</th><th class="number" data-sort="2" data-type="number">Imports</th><th class="number" data-sort="3" data-type="number">Balance</th><th class="number" data-sort="4" data-type="number">Exports, % of GDP</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2019</td><td class="number">$894bn</td><td class="number">$909bn</td><td class="number">−$15bn</td><td class="number">17.0%</td></tr>
+              <tr><td>2020</td><td class="number">$785bn</td><td class="number">$799bn</td><td class="number">−$14bn</td><td class="number">15.1%</td></tr>
+              <tr><td>2021</td><td class="number">$913bn</td><td class="number">$939bn</td><td class="number">−$26bn</td><td class="number">17.5%</td></tr>
+              <tr><td>2022</td><td class="number">$918bn</td><td class="number">$1,077bn</td><td class="number">−$159bn</td><td class="number">20.6%</td></tr>
+              <tr><td>2023</td><td class="number">$923bn</td><td class="number">$988bn</td><td class="number">−$65bn</td><td class="number">21.1%</td></tr>
+              <tr><td>2024</td><td class="number">$921bn</td><td class="number">$958bn</td><td class="number">−$37bn</td><td class="number">22.0%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source-note">Exports and imports of goods and services, current US dollars.
+        Source: World Bank WDI (NE.EXP.GNFS.CD, NE.IMP.GNFS.CD, NE.EXP.GNFS.ZS).
+        Click a column heading to sort.</p>
+      </article>
+
+      <div class="two-col">
+        <article class="card">
+          <h3>The 2022 deficit</h3>
+          <p>Japan ran a goods-and-services deficit in every year shown, but 2022
+          was exceptional: imports jumped to $1,077 billion as energy prices
+          spiked and the yen fell, pushing the deficit to $159 billion — more
+          than six times the 2021 figure. By 2024 the deficit had narrowed to
+          $37 billion.</p>
+        </article>
+        <article class="card">
+          <h3>What Japan trades</h3>
+          <p>Machinery, vehicles and electronics dominate exports; mineral fuels,
+          machinery and food dominate imports. Japan imports almost all of its
+          oil and gas, which is why energy prices move the trade balance more
+          than any other single factor.</p>
+          <p>Exports equalled 22.0% of GDP in 2024 — up from 15.1% in the
+          pandemic year 2020.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Japan in Figures — an independent national statistics site. Figures from the
+    World Bank World Development Indicators and the Statistics Bureau of Japan;
+    see <a href="sources.html">Sources and methods</a>.</p>
+    <p>Built as an original site for the make.fun “Make the best national statistics
+    site” bounty. © <span id="footer-year">2026</span> Japan in Figures.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

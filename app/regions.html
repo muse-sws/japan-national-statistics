@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regions — Japan in Figures</title>
+<meta name="description" content="Japan's largest prefectures by population, 2020 census, with sources.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>
+        <span class="brand-name">Japan in Figures</span><br>
+        <span class="brand-tag">National Statistics Portal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="trade.html">Trade</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Regions</p>
+      <h1>Half the country lives in eight prefectures.</h1>
+      <p class="lede">Japan has 47 prefectures, but its people are concentrated: the eight
+      largest hold 63,984,000 people — 50.7% of the 2020 census total. The
+      Tokyo metropolitan area alone (Tokyo, Kanagawa, Saitama and Chiba) holds
+      36,914,000, about 30% of the country.</p>
+      <p class="updated">Source: Statistics Bureau of Japan, 2020 Population Census</p>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <h3>The ten largest prefectures, 2020 census</h3>
+        <div class="filter-box">
+          <label for="prefecture-filter">Find a prefecture:</label>
+          <input type="search" id="prefecture-filter" placeholder="Type a name, e.g. Osaka" autocomplete="off">
+          <span class="filter-count" id="prefecture-count">10 of 10 prefectures shown</span>
+        </div>
+        <div class="table-scroll">
+          <table data-sortable id="prefecture-table">
+            <thead>
+              <tr><th data-sort="0" data-type="number">Rank</th><th data-sort="1">Prefecture</th><th class="number" data-sort="2" data-type="number">Population</th><th class="number" data-sort="3" data-type="number">Share of Japan</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Tokyo</td><td class="number">14,047,594</td><td class="number">11.1%</td></tr>
+              <tr><td>2</td><td>Kanagawa</td><td class="number">9,237,337</td><td class="number">7.3%</td></tr>
+              <tr><td>3</td><td>Osaka</td><td class="number">8,837,685</td><td class="number">7.0%</td></tr>
+              <tr><td>4</td><td>Aichi</td><td class="number">7,542,415</td><td class="number">6.0%</td></tr>
+              <tr><td>5</td><td>Saitama</td><td class="number">7,344,765</td><td class="number">5.8%</td></tr>
+              <tr><td>6</td><td>Chiba</td><td class="number">6,284,480</td><td class="number">5.0%</td></tr>
+              <tr><td>7</td><td>Hyogo</td><td class="number">5,465,002</td><td class="number">4.3%</td></tr>
+              <tr><td>8</td><td>Hokkaido</td><td class="number">5,224,614</td><td class="number">4.1%</td></tr>
+              <tr><td>9</td><td>Fukuoka</td><td class="number">5,135,214</td><td class="number">4.1%</td></tr>
+              <tr><td>10</td><td>Shizuoka</td><td class="number">3,633,202</td><td class="number">2.9%</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source-note">2020 Population Census, 1 October 2020. National total 126,146,099.
+        Source: Statistics Bureau of Japan. Click a column heading to sort; type
+        in the box to filter.</p>
+      </article>
+
+      <div class="two-col">
+        <article class="card">
+          <h3>Concentration is rising</h3>
+          <p>Between the 2015 and 2020 censuses the population grew in only 8 of
+          the 47 prefectures — Tokyo, Kanagawa, Saitama, Chiba, Aichi, Fukuoka,
+          Okinawa and Shiga — and fell in the other 39. Tokyo grew fastest, by
+          3.9%.</p>
+          <p>The smallest prefecture, Tottori, counted about 550,000 people in
+          2020 — one twenty-fifth of Tokyo.</p>
+        </article>
+        <article class="card">
+          <h3>Three metropolitan areas</h3>
+          <p>Most Japanese live in one of three metropolitan areas: Greater Tokyo
+          (about 37 million), Keihanshin around Osaka and Kyoto, and Chukyo
+          around Nagoya in Aichi. The rest of the country — 39 prefectures —
+          shares the other half of the population.</p>
+          <p>See <a href="population.html">Population</a> for the national picture
+          behind these regional figures.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Japan in Figures — an independent national statistics site. Figures from the
+    World Bank World Development Indicators and the Statistics Bureau of Japan;
+    see <a href="sources.html">Sources and methods</a>.</p>
+    <p>Built as an original site for the make.fun “Make the best national statistics
+    site” bounty. © <span id="footer-year">2026</span> Japan in Figures.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

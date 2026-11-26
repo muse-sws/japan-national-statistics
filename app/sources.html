@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sources and methods — Japan in Figures</title>
+<meta name="description" content="Where every figure on Japan in Figures comes from, and how the site is built.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">JP</span>
+      <span>
+        <span class="brand-name">Japan in Figures</span><br>
+        <span class="brand-tag">National Statistics Portal</span>
+      </span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav class="site-nav" id="site-nav" aria-label="Sections">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="population.html">Population</a></li>
+        <li><a href="economy.html">Economy</a></li>
+        <li><a href="labour.html">Labour</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="trade.html">Trade</a></li>
+        <li><a href="regions.html">Regions</a></li>
+        <li><a href="sources.html">Sources</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Sources and methods</p>
+      <h1>Where every figure comes from.</h1>
+      <p class="lede">A statistics site is only as good as its sources. This page lists each
+      one, what it was used for, and how the figures were handled.</p>
+    </section>
+
+    <section class="section">
+      <article class="card">
+        <h3>Sources</h3>
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr><th>Source</th><th>Used for</th><th>Series</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>World Bank, World Development Indicators</td>
+                <td>Population, GDP, GDP per capita, unemployment, inflation, trade, fertility, life expectancy</td>
+                <td>SP.POP.TOTL, NY.GDP.MKTP.CD, NY.GDP.PCAP.CD, SL.UEM.TOTL.ZS, FP.CPI.TOTL.ZG, NE.EXP.GNFS.CD, NE.IMP.GNFS.CD, NE.EXP.GNFS.ZS, SP.DYN.TFRT.IN, SP.DYN.LE00.IN, SP.POP.0014.TO.ZS, SP.POP.65UP.TO.ZS</td>
+              </tr>
+              <tr>
+                <td>Statistics Bureau of Japan, 2020 Population Census</td>
+                <td>Prefecture populations and shares; census national total</td>
+                <td>Population and Households of Japan 2020</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source-note">All figures were accessed on 26 November 2026. Each page of this
+        site repeats its own source and year beside the figures it shows.</p>
+      </article>
+
+      <article class="card">
+        <h3>Methods and notes</h3>
+        <ul>
+          <li><strong>No estimates.</strong> Every figure is a published value. Where a
+          chart needs a value the source does not publish, the chart leaves it
+          out rather than filling it in.</li>
+          <li><strong>Rounding.</strong> Tables show full values; charts round for
+          labels (for example 123,975,371 people is shown as 124.0m). Rounding
+          never changes a value by more than the last digit shown.</li>
+          <li><strong>Currency.</strong> GDP, trade and GDP per capita are in current
+          US dollars, as the World Bank publishes them. Dollar figures move with
+          the yen–dollar rate; see the <a href="economy.html">Economy</a> page
+          for why that matters.</li>
+          <li><strong>Unemployment.</strong> The modelled ILO estimate, as a share of
+          the total labour force. Japan's own Labour Force Survey publishes a
+          similar series monthly.</li>
+          <li><strong>Age structure.</strong> The 15–64 share (58.8% in 2024) is the
+          remainder after the published 0–14 (11.4%) and 65+ (29.8%) shares.</li>
+          <li><strong>Trade balance.</strong> Exports minus imports of goods and
+          services, in current US dollars, computed from the published series.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>About this site</h3>
+        <p>Japan in Figures is an original site, designed and written for this
+        bounty. It is plain static files — HTML, CSS and JavaScript with no
+        build step and no network request — so it opens in any browser from its
+        own files, on a desktop and on a phone.</p>
+        <p>The charts are drawn in the browser from the same numbers the tables
+        print, using the site's own chart code (<code>charts.js</code>). The
+        data lives in <code>data.js</code>; the controls in <code>app.js</code>.</p>
+        <p>Corrections: if a figure on this site disagrees with its stated source,
+        the source is right and this site should be fixed. Every page names the
+        source to check against.</p>
+      </article>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p>Japan in Figures — an independent national statistics site. Figures from the
+    World Bank World Development Indicators and the Statistics Bureau of Japan;
+    see <a href="sources.html">Sources and methods</a>.</p>
+    <p>Built as an original site for the make.fun “Make the best national statistics
+    site” bounty. © <span id="footer-year">2026</span> Japan in Figures.</p>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
